@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tareas - Panel de Consola</title>
+  <meta name="description" content="Una aplicación de tareas con estilo de consola">
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hud-background"></div>
+  <div class="app-container console-panel">
+    <header class="panel-header">
+      <h1 class="glitch-text" data-text="SISTEMA.TAREAS">SISTEMA.TAREAS</h1>
+      <div class="status-bar">
+        <span class="status-dot"></span>
+        <span class="status-text">EN LÍNEA</span>
+      </div>
+    </header>
+    
+    <main class="panel-body">
+      <div class="stats hud-stats">
+        <p>PROCESOS_PENDIENTES: <span id="pending-count" class="neon-text">0</span></p>
+      </div>
+
+      <form id="task-form" class="hud-form">
+        <div class="input-wrapper">
+          <span class="input-prefix">&gt;</span>
+          <input type="text" id="task-input" placeholder="Ingresar nuevo comando/tarea..." autocomplete="off" required />
+        </div>
+        <button type="submit" class="cyber-btn">
+          <span class="btn-text">EJECUTAR</span>
+        </button>
+      </form>
+      
+      <div class="task-list-container">
+        <ul id="task-list" class="hud-list">
+          
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
