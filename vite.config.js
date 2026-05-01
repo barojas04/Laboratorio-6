@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: "./src",
-  base: "/Laboratorio-6/",
+  base: "./",
   publicDir: "../public",
   plugins: [],
   server: { port: 1234 },

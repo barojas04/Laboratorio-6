@@ -1,3 +1,4 @@
+import './index.css';
 import { initTasks, addTask, toggleTask, deleteTask, getTasks, getPendingCount } from './task.js';
 import { renderTasks, updatePendingCount, getInputValue, clearInput } from './ui.js';
 
